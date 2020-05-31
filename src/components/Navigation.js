@@ -17,18 +17,17 @@ function Navigation() {
 
     return (
         <div>
-            <h6 className="text-white float-right">MENU</h6>
             <Navbar color="muted" dark >
-                <NavbarBrand href="/" className="mr-auto float-right"></NavbarBrand>
-                <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+                <NavbarBrand href="/" className="mr-auto"></NavbarBrand>
+                <NavbarToggler onClick={toggleNavbar} className="mr-2" >=MENU=</NavbarToggler>
                 <Collapse isOpen={!collapsed} navbar>
                     <Nav navbar>
                         <NavItem>
-                            <NavLink href="/components/">ABOUT ME</NavLink>
+                            <NavLink href="/components/">ABOUT LAURA</NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink href="https://github.com/reactstrap/reactstrap">NATURE PHOTOS</NavLink>
-                            <NavLink href="/components/">HAND WORK/ DOODLES</NavLink>
+                            <NavLink href="/components/">HAND WORK & DOODLES</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
