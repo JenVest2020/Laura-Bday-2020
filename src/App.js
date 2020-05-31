@@ -4,13 +4,14 @@ import Navigation from './components/Navigation';
 
 const AppDiv = styled.div`
 text-align: center;
-background-image:linear-gradient(red, orange,  yellow, green, blue, purple);
+background-image:linear-gradient(#990000, orange,  #cccc00, green, blue, purple);
 width: 1000px;
 height: 1000px;
+margin: 0 auto;
 `;
 
 const AppHeader = styled.h1`
-background-color: rgba(255, 0, 255, .3);
+background-color: rgba(255, 255, 255, .3);
  margin: 0;
   display: flex;
   flex-direction: column;
@@ -32,7 +33,7 @@ function App() {
     return (
         <AppDiv>
             <Navigation />
-            <AppHeader>Laura Stecher's Art Works</AppHeader>
+            <AppHeader>Mom's Favorites of Laura Stecher's Art Works</AppHeader>
             <AppSubheader>Click Any Thumbnail to View Full-Size</AppSubheader>
         </AppDiv>
     );
