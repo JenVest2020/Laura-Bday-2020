@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Navigation from './components/Navigation';
+import Images from './components/Images.js';
 
 const AppDiv = styled.div`
 text-align: center;
@@ -34,7 +35,8 @@ function App() {
         <AppDiv>
             <Navigation />
             <AppHeader>Mom's Favorites of Laura Stecher's Art Works</AppHeader>
-            <AppSubheader>Click Any Thumbnail to View Full-Size</AppSubheader>
+            <AppSubheader>Click Any Thumbnail to View Larger-Size</AppSubheader>
+            <Images />
         </AppDiv>
     );
 }

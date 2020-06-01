@@ -1,12 +1,5 @@
 import React, { useState } from "react";
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import styled from "styled-components";
-
-// const menuheader = styled.h2`
-//     text-align:right;
-//     font-size: 3rem;
-//     font-weight:bolder;
-// `;
 
 
 
