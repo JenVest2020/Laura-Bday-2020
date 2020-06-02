@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import imageDataCU from './imageDataCU.js';
 
-const imageContainer = styled.div`
+const ImageContainer = styled.div`
     width: 25%;
     background-color: rgba(255,255,255,.15);
     display:flex;
@@ -10,28 +10,36 @@ const imageContainer = styled.div`
     align-items:space-evenly;
 `;
 
-const tNailname = styled.h3`
+const imageInfoContainer = styled.div`
+    display:flex;
+    flex-wrap: wrap;
+`;
+
+const TnailName = styled.h3`
     text-align:center;
 `;
 
-const image = styled.img`
+const Image = styled.img`
     width:50%;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
 `;
 
 function Images() {
     const [closeups, setCloseups] = useState(imageDataCU)
-    return (
-        {
-            closeups.map(object => {
-                return
-                <imageContainer>
-                    <tNailname>{object.name}</tNailname>
-                    <image src={object.imageSrc} alt={object.alt} />
-                </imageContainer>
-            })
+    console.log('from Images', closeups)
 
-        })
+    return (
+
+        <imageInfoContainer>
+            {closeups.map(object => {
+                return (
+                    <ImageContainer>
+                        <TnailName>{object.name}</TnailName>
+                        <Image src={object.imageSrc} alt={object.alt} />
+                    </ImageContainer>)
+            })}
+        </imageInfoContainer>
+    )
 
 
 
