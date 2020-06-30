@@ -1,8 +1,9 @@
+const cu1 = require('../images/close ups/baby');
 const imageDataCU = [
     {
         id: '1',
         name: 'babyPinecones',
-        imageSrc: './src/images/close-ups/baby-pinecones-042119.jpg',
+        imageSrc: { cu1 },
         alt: 'close up of open hand holding a tiny branch of pine cone buds',
     },
     {
