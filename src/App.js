@@ -1,7 +1,8 @@
 import React from "react";
+import { Route } from 'react-router-dom';
 import styled from "styled-components";
 import Navigation from './components/Navigation';
-import Images from './components/Images.js';
+import Homepage from './components/Homepage';
 
 const AppDiv = styled.div`
 text-align: center;
@@ -34,10 +35,12 @@ function App() {
     return (
         <AppDiv>
             <Navigation />
-            <AppHeader>Mom's Favorites of Laura Stecher's Art Works</AppHeader>
-            <AppSubheader>Click Any Thumbnail to View Larger-Size</AppSubheader>
-            <Images />
-        </AppDiv>
+            <Route path='/homepage'>
+                <AppHeader>Close up Genious of Laura Stecher's Art Works</AppHeader>
+                <AppSubheader>Click Any Thumbnail to View Larger-Size</AppSubheader>
+                <Homepage />
+            </Route>
+        </AppDiv >
     );
 }
 

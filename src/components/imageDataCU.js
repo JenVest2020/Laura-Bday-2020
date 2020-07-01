@@ -1,22 +1,24 @@
-const cu1 = require('../images/close ups/baby');
+const cu1 = require('../images/close ups/babyPinecones042119.jpg');
+const cu2 = require('../images/close ups/beaverpondTrail3.jpg');
+const cu3 = require('../images/close ups/beaverpondTral5.jpg');
 const imageDataCU = [
     {
         id: '1',
         name: 'babyPinecones',
-        imageSrc: { cu1 },
+        imageSrc: cu1,
         alt: 'close up of open hand holding a tiny branch of pine cone buds',
     },
     {
         id: '2',
         name: 'beaverpondTrail3',
-        imageSrc: './src/images/close-ups/beaverpond-trail3.jpg',
+        imageSrc: cu2,
         alt: 'close up of open bright yellow flower and stamen',
     },
     {
         id: '3',
         name: 'beaverpond trail5',
-        imageSrc: './src/images/close-ups/beaverpond-trail5.jpg',
-        alt: 'clos up of a brown snail in his shell on a curvy log',
+        imageSrc: cu3,
+        alt: 'close up of a brown snail in his shell on a curvy log',
     },
     {
         id: '4',
